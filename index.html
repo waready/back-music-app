@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login con Google</title>
+</head>
+<body>
+  <h1>Login con Google</h1>
+  <button onclick="loginWithGoogle()">Iniciar sesión con Google</button>
+
+  <script>
+    function loginWithGoogle() {
+      // Abre una nueva ventana emergente para la autenticación con Google
+      var authWindow = window.open('http://localhost:3333/login/google', '_blank', 'width=600,height=400');
+
+      // Verifica si la ventana emergente se cierra cada cierto intervalo de tiempo
+      var timer = setInterval(function() {
+        // Verifica si la ventana emergente ha sido cerrada
+        if (authWindow.closed) {
+          clearInterval(timer); // Detiene la verificación del intervalo de tiempo
+          // Redirige al usuario a la página de inicio o realiza otras acciones necesarias
+          window.location.href = '/'; // Reemplaza '/' con la URL a la que deseas redirigir al usuario
+        }
+      }, 1000); // Verifica cada segundo si la ventana emergente ha sido cerrada
+    }
+  </script>
+</body>
+</html> 

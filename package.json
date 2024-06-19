@@ -1,37 +1,32 @@
 {
-  "name": "adonis-api-app",
-  "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+  "name": "prisma-nodejs-api",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "test": "node ace test"
+    "dev": "nodemon src/index.js"
   },
-  "keywords": [
-    "adonisjs",
-    "adonis-app"
-  ],
+  "keywords": [],
   "author": "",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "ISC",
   "dependencies": {
-    "@adonisjs/ace": "^5.0.8",
-    "@adonisjs/ally": "^2.2.0",
-    "@adonisjs/auth": "^3.0.7",
-    "@adonisjs/bodyparser": "~2.0.9",
-    "@adonisjs/cors": "^1.0.7",
-    "@adonisjs/fold": "^4.0.9",
-    "@adonisjs/framework": "^5.0.9",
-    "@adonisjs/ignitor": "^2.0.8",
-    "@adonisjs/lucid": "^6.1.3",
-    "@verful/permissions": "^1.0.0",
-    "adonis-acl": "^1.1.1",
-    "mysql": "^2.18.1",
-    "pg": "^8.8.0",
-    "url-parse": "^1.5.10"
+    "@prisma/client": "^4.14.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "prisma": "^4.14.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "uuid": "^10.0.0",
+    "ytdl-core": "^4.11.5"
   },
-  "autoload": {
-    "App": "./app"
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }

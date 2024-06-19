@@ -1,11 +1,7 @@
-# Node modules
 node_modules
+# Keep environment variables out of version control
+#.env
 
-# Adonis directory for storing tmp files
-tmp
+prisma/dev.db
 
-# Environment variables, never commit this file
-.env
-
-# The development sqlite file
-database/*.sqlite
+public/mp3

@@ -4,4 +4,4 @@ node_modules
 
 prisma/dev.db
 
-public/mp3
+public/mp3/*.mp3

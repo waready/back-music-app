@@ -46,3 +46,20 @@ model Category {
   products Product[]
 }
 
+model Song {
+  id         Int        @id @default(autoincrement())
+  title      String
+  artist     String
+  videoId    String
+  audioPath  String
+  thumbnails Thumbnail[]
+}
+
+model Thumbnail {
+  id       Int    @id @default(autoincrement())
+  url      String
+  width    Int
+  height   Int
+  songId   Int
+  song     Song   @relation(fields: [songId], references: [id])
+}

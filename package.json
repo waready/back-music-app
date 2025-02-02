@@ -24,7 +24,7 @@
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
     "uuid": "^10.0.0",
-    "ytdl-core": "^4.11.5"
+    "ytdl-core": "npm:@distube/ytdl-core@^4.16.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

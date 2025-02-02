@@ -24,6 +24,7 @@
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
     "uuid": "^10.0.0",
+    "youtube-dl-exec": "^3.0.8",
     "ytdl-core": "npm:@distube/ytdl-core@^4.16.0"
   },
   "devDependencies": {
